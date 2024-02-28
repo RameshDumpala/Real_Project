@@ -1,38 +1,133 @@
-.App {
+/* .header_div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
+ 
+}
+.search_input{
+  width: 150px;
+  border-radius: 20px;
+  padding: 4px 35px;
+  border: 1px solid gray;
+
+}
+.icon{
+  position: relative;
+  left: -210px;
+  top: 4px;
+
+}
+.search_btn{
+  padding: 4px 14px;
+  border: 1px solid gray;
+  border-radius: 18px;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  border: 2px solid gray
+}
+.grid-item {
+  justify-self: start;
+  padding: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item_name {
+  margin: 0px 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.submit_btn{
+  margin: 4px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+float: inline-end;
+  background-color: cornflowerblue;
+} */
+ 
+.container{
+  border: 2px solid rgb(227, 225, 225);
+  margin: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header_div{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid rgb(217, 215, 215);
+}
+.search_div{
+  position: relative;
+}
+.search_input{
+  width: 170px;
+  border-radius: 20px;
+  padding: 4px 30px;
+  border: 2px solid rgb(171, 168, 168);
+
+}
+.icon{
+ position: absolute;
+ left: 10px;
+ top: 5px;
+}
+.search_btn{
+  border-radius: 20px;
+  padding: 4px 15px;
+  border: 2px solid rgb(171, 168, 168);
+  color: #FFFF;
+  background-color: rgb(182 186 188);;
+  margin: 0px 5px;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);  
+  gap: 5px;  
+  padding: 10px;
+  border-bottom: 2px solid rgb(194, 192, 192);
+  height:160px;
+  overflow-y: scroll;
+  scrollbar-color: gray ;
+
+}
+.grid-container::-webkit-scrollbar{
+  width: 7px;
+}
+ .grid-container::-webkit-scrollbar-thumb{
+  background: gray;
+  border-radius: 10px;
+  
+
+ }
+.grid-item {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 85%;
 }
 
-.App-link {
-  color: #61dafb;
+.item_name {
+  padding: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit_btn{
+  margin: 4px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: rgb(135, 173, 243);
+  
+  cursor: pointer;
+}
+
+textarea{
+ line-height: 13px;
+ width: 250px;
+  height: auto;
+}
+.Active{
+  background-color: rgb(197, 195, 195);
 }
